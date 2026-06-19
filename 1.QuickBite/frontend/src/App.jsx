@@ -24,7 +24,7 @@ import TrackOrderPage from "./pages/TrackOrderPage";
 import Shop from "./pages/Shop";
 import { io } from "socket.io-client";
 import { setSocket } from "./redux/userslice";
-export const serverUrl = "http://localhost:8000";
+export const serverUrl = "https://quickbite-backend-ozyv.onrender.com";
 function App() {
   const dispatch = useDispatch();
   useGetCurrentUser();
