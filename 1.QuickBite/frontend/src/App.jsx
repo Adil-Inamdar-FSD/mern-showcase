@@ -24,7 +24,7 @@ import TrackOrderPage from "./pages/TrackOrderPage";
 import Shop from "./pages/Shop";
 import { io } from "socket.io-client";
 import { setSocket } from "./redux/userslice";
-export const serverUrl = import.meta.env.VITE_SERVER_URL;
+export const serverUrl = "http://localhost:8000";
 function App() {
   const dispatch = useDispatch();
   useGetCurrentUser();
