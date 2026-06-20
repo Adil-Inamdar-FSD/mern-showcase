@@ -10,9 +10,8 @@ function CartItemCard({ data }) {
     dispatch(updateQuantity({ id, quantity: currentQuantity + 1 }));
   };
   const handleDecrease = (id, currentQuantity) => {
-    if(currentQuantity>1){
-
-        dispatch(updateQuantity({ id, quantity: currentQuantity - 1 }));
+    if (currentQuantity > 1) {
+      dispatch(updateQuantity({ id, quantity: currentQuantity - 1 }));
     }
   };
   return (
@@ -49,7 +48,10 @@ function CartItemCard({ data }) {
         >
           <FaPlus size={12} />
         </button>
-        <button className="p-2 bg-red-100 text-red-600 rounded-full hover:bg-red-200" onClick={()=>dispatch(removeCartItem(data.id))}>
+        <button
+          className="p-2 bg-red-100 text-red-600 rounded-full hover:bg-red-200"
+          onClick={() => dispatch(removeCartItem(data.id))}
+        >
           <FaTrash size={18} />
         </button>
       </div>

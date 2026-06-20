@@ -24,7 +24,7 @@ import TrackOrderPage from "./pages/TrackOrderPage";
 import Shop from "./pages/Shop";
 import { io } from "socket.io-client";
 import { setSocket } from "./redux/userslice";
-export const serverUrl = "http://localhost:8000";
+export const serverUrl = import.meta.env.VITE_SERVER_URL;
 function App() {
   const dispatch = useDispatch();
   useGetCurrentUser();
@@ -41,13 +41,13 @@ function App() {
     dispatch(setSocket(socketInstance));
     socketInstance.on("connect", () => {
       if (userData) {
-        socketInstance.emit("identity", {userId:userData._id});
+        socketInstance.emit("identity", { userId: userData._id });
       }
     });
 
-    return ()=>{
-socketInstance.disconnect()
-    }
+    return () => {
+      socketInstance.disconnect();
+    };
   }, [userData?._id]);
   return (
     <>
