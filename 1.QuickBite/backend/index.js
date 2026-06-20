@@ -19,11 +19,15 @@ import { socketHandler } from "./socket.js";
 const app = express();
 const server = http.createServer(app);
 
-// 🔥 MUST be EXACT frontend URL (no trailing slash issues)
 const FRONTEND_URL = "https://quickbite-frontend-958j.onrender.com";
 
 // =======================
-// 🔥 CORS FIX (CRITICAL)
+// 🔥 IMPORTANT FIX 1: TRUST PROXY (RENDER ISSUE)
+// =======================
+app.set("trust proxy", 1);
+
+// =======================
+// 🔥 CORS FIX (MUST BE EXACT)
 // =======================
 app.use(
   cors({
