@@ -58,9 +58,6 @@ QuickBite/
 
 ## ⚙️ Setup Instructions
 
-### Clone repo
-git clone https://github.com/your-username/quickbite.git
-
 ### Install dependencies
 
 Backend:
