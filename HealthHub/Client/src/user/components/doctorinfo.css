@@ -1,0 +1,128 @@
+.doctor-page {
+  min-height: 100%;
+  background: #f1f3f6;
+  padding: 24px;
+  color: #172337;
+}
+
+.doctor-page-header {
+  /* width: 100%; */
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 22px 24px;
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  box-shadow: 0 8px 26px rgba(15, 23, 42, 0.08);
+}
+
+.doctor-page-header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.doctor-page-header p {
+  margin: 6px 0 0;
+  color: #64748b;
+}
+
+.doctor-header-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  background: #ecfeff;
+  color: #0f766e;
+  display: grid;
+  place-items: center;
+  font-size: 34px;
+}
+
+.doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.doctor-card,
+.doctor-info-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 8px 26px rgba(15, 23, 42, 0.08);
+  border: 1px solid #e5e7eb;
+}
+
+.doctor-card span {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: #ecfeff;
+  color: #0f766e;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+
+.doctor-card h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  color: #172337;
+}
+
+.doctor-card p,
+.doctor-info-card p {
+  margin: 0;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.doctor-info-card h2 {
+  margin: 0;
+  color: #172337;
+  font-size: 24px;
+}
+
+.doctor-info-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: grid;
+  gap: 12px;
+}
+
+.doctor-info-card li {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #334155;
+  font-weight: 700;
+}
+
+.doctor-info-card li span {
+  color: #0f766e;
+}
+
+@media (max-width: 900px) {
+  .doctor-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .doctor-page {
+    padding: 14px;
+  }
+
+  .doctor-page-header {
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,460 @@
+.pla-container {
+  min-height: 100%;
+  background: #f1f3f6;
+  padding: 24px;
+  color: #172337;
+}
+
+.pla-header {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 22px 24px;
+  margin-bottom: 22px;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 18px;
+
+  box-shadow: 0 8px 26px rgba(15, 23, 42, 0.08);
+}
+
+.pla-header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.pla-header-icon-btn {
+  width: 46px;
+  height: 46px;
+
+  border: none;
+  border-radius: 14px;
+
+  background: #ecfeff;
+  color: #0f766e;
+
+  display: grid;
+  place-items: center;
+
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.pla-header-icon-btn:hover {
+  background: #ccfbf1;
+}
+
+.pla-icon {
+  width: 52px;
+  height: 52px;
+
+  border-radius: 16px;
+
+  background: #ecfeff;
+  color: #0f766e;
+
+  display: grid;
+  place-items: center;
+
+  flex-shrink: 0;
+}
+
+.pla-icon span {
+  font-size: 30px;
+}
+
+.pla-header-text h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 900;
+  color: #172337;
+}
+
+.pla-header-text p {
+  margin: 5px 0 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.pla-header-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.pla-search-box {
+  width: 100%;
+  max-width: 520px;
+  height: 48px;
+
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 0 14px;
+}
+
+.pla-search-box span {
+  color: #64748b;
+}
+
+.pla-search-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+
+  color: #172337;
+  font-size: 14px;
+}
+
+.pla-header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.pla-action-btn {
+  min-height: 46px;
+  border: none;
+  border-radius: 14px;
+
+  padding: 0 18px;
+
+  font-size: 14px;
+  font-weight: 900;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  transition: 0.2s ease;
+}
+
+.pla-primary-btn {
+  background: #0f766e;
+  color: white;
+}
+
+.pla-primary-btn:hover {
+  background: #115e59;
+}
+
+.pla-filters {
+  margin-bottom: 22px;
+}
+
+.pla-filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.pla-filter-buttons button {
+  min-height: 42px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 999px;
+
+  background: white;
+  color: #334155;
+
+  padding: 0 16px;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.pla-filter-buttons button.active {
+  background: #0f766e;
+  border-color: #0f766e;
+  color: white;
+}
+
+.pla-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+.pla-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+
+  border: 1px solid #e5e7eb;
+
+  box-shadow: 0 8px 26px rgba(15, 23, 42, 0.08);
+
+  display: flex;
+  flex-direction: column;
+
+  transition: 0.25s ease;
+}
+
+.pla-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.12);
+}
+
+.pla-card-img {
+  height: 220px;
+  background: #f8fafc;
+
+  display: grid;
+  place-items: center;
+
+  padding: 18px;
+}
+
+.pla-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.pla-card-body {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.pla-card-body h3 {
+  margin: 0;
+  color: #172337;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.4;
+  min-height: 48px;
+}
+
+.pla-card-category {
+  margin: 0;
+  color: #0f766e;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.pla-card-brand {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.pla-card-price {
+  margin: 0;
+  color: #172337;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.pla-card-stock {
+  margin-top: 4px;
+}
+
+.pla-stock-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 8px;
+
+  color: #334155;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.pla-product-stock-bar {
+  width: 100%;
+  height: 8px;
+
+  background: #e2e8f0;
+  border-radius: 999px;
+
+  overflow: hidden;
+}
+
+.pla-product-stock-fill {
+  height: 100%;
+  border-radius: 999px;
+}
+
+.pla-product-stock-fill.in {
+  background: #22c55e;
+}
+
+.pla-product-stock-fill.low {
+  background: #f59e0b;
+}
+
+.pla-product-stock-fill.out {
+  background: #ef4444;
+}
+
+.pla-stock-badge {
+  display: inline-flex;
+
+  padding: 6px 12px;
+  border-radius: 999px;
+
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.pla-stock-badge.in {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.pla-stock-badge.low {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.pla-stock-badge.out {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.pla-card-desc {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.6;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+}
+
+.pla-card-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+.pla-card-actions button {
+  height: 52px;
+
+  border: none;
+  background: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  transition: 0.2s ease;
+}
+
+.pla-card-actions button:first-child {
+  color: #0f766e;
+  border-right: 1px solid #e5e7eb;
+}
+
+.pla-card-actions button:last-child {
+  color: #dc2626;
+}
+
+.pla-card-actions button:hover:first-child {
+  background: #ecfeff;
+}
+
+.pla-card-actions button:hover:last-child {
+  background: #fef2f2;
+}
+
+.pla-empty-state {
+  grid-column: 1/-1;
+
+  background: white;
+  border-radius: 20px;
+
+  padding: 70px 24px;
+
+  text-align: center;
+
+  border: 1px dashed #cbd5e1;
+}
+
+.pla-empty-state span {
+  font-size: 70px;
+  color: #94a3b8;
+}
+
+.pla-empty-state h3 {
+  margin: 14px 0 6px;
+  color: #172337;
+  font-size: 24px;
+}
+
+.pla-empty-state p {
+  margin: 0;
+  color: #64748b;
+  font-weight: 700;
+}
+
+@media (max-width: 1100px) {
+  .pla-header {
+    grid-template-columns: 1fr;
+  }
+
+  .pla-header-center,
+  .pla-header-right {
+    width: 100%;
+  }
+
+  .pla-search-box {
+    max-width: unset;
+  }
+
+  .pla-header-right {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 700px) {
+  .pla-container {
+    padding: 14px;
+  }
+
+  .pla-header {
+    padding: 18px;
+  }
+
+  .pla-header-left {
+    align-items: flex-start;
+  }
+
+  .pla-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pla-action-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
